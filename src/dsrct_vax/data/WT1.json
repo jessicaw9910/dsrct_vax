@@ -1,7 +1,7 @@
 {
   "gene": "WT1",
   "uniprot_id": "P19544",
-  "query_date": "2026-11-18",
+  "query_date": "2026-11-19",
   "dict_isoform_seq": {
     "P19544": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL",
     "P19544-2": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL",
@@ -1589,5 +1589,119 @@
       "file_name": "AF-P19544-9-F1.cif",
       "bool_seq_match": true
     }
-  }
+  },
+  "list_domains": [
+    {
+      "accession": "IPR000976",
+      "name": "Wilm's tumour protein, N-terminal",
+      "type": "domain",
+      "start": 1,
+      "end": 321,
+      "dict_members": {
+        "pfam": [
+          "PF02165"
+        ]
+      }
+    },
+    {
+      "accession": "IPR013087",
+      "name": "Zinc finger C2H2-type",
+      "type": "domain",
+      "start": 323,
+      "end": 352,
+      "dict_members": {
+        "pfam": [
+          "PF00096",
+          "PF12874",
+          "PF13894",
+          "PF13912",
+          "PF25420"
+        ],
+        "profile": [
+          "PS50157"
+        ],
+        "prosite": [
+          "PS00028"
+        ],
+        "smart": [
+          "SM00355"
+        ]
+      }
+    },
+    {
+      "accession": "IPR013087",
+      "name": "Zinc finger C2H2-type",
+      "type": "domain",
+      "start": 353,
+      "end": 382,
+      "dict_members": {
+        "pfam": [
+          "PF00096",
+          "PF12874",
+          "PF13894",
+          "PF13912",
+          "PF25420"
+        ],
+        "profile": [
+          "PS50157"
+        ],
+        "prosite": [
+          "PS00028"
+        ],
+        "smart": [
+          "SM00355"
+        ]
+      }
+    },
+    {
+      "accession": "IPR013087",
+      "name": "Zinc finger C2H2-type",
+      "type": "domain",
+      "start": 383,
+      "end": 410,
+      "dict_members": {
+        "pfam": [
+          "PF00096",
+          "PF12874",
+          "PF13894",
+          "PF13912",
+          "PF25420"
+        ],
+        "profile": [
+          "PS50157"
+        ],
+        "prosite": [
+          "PS00028"
+        ],
+        "smart": [
+          "SM00355"
+        ]
+      }
+    },
+    {
+      "accession": "IPR013087",
+      "name": "Zinc finger C2H2-type",
+      "type": "domain",
+      "start": 414,
+      "end": 443,
+      "dict_members": {
+        "pfam": [
+          "PF00096",
+          "PF12874",
+          "PF13894",
+          "PF13912",
+          "PF25420"
+        ],
+        "profile": [
+          "PS50157"
+        ],
+        "prosite": [
+          "PS00028"
+        ],
+        "smart": [
+          "SM00355"
+        ]
+      }
+    }
+  ]
 }
