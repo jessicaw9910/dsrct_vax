@@ -1,0 +1,7 @@
+include MANIFEST.in
+include README.md
+graft src/dsrct_vax/data
+graft src/dsrct_vax/app/static
+global-exclude *.py[cod] __pycache__ *.so
+prune src/**/.ipynb_checkpoints
+prune src/**/.pytest_cache

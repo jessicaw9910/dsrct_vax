@@ -64,17 +64,22 @@ instantiation through mkt's cached session and stamps provenance.
 gencode.py     UCSCGeneRegion / UCSCTrack / UCSCSequence clients, Transcript model,
                fetch_gencode_transcripts (GENCODE knownGene on hg38 + hg19)
 uniprot.py     UniProtIsoformFASTA (extends mkt UniProt); Ensembl xrefs via mkt UniProtJSON
-isoforms.py    assembles a GeneInfo snapshot (UniProt + GENCODE + AlphaFold via mkt)
+interpro.py    Pfam (our version of mkt Pfam: one row per hit, not just the first) and
+               InterPro (integrated entries, same parser); return_domains -> ProteinDomain
+isoforms.py    assembles a GeneInfo snapshot (UniProt + GENCODE + AlphaFold + InterPro domains)
 schema.py      GeneInfo -> IsoformInfo/IsoformMapping (codon + exon per residue);
                PeptideInfo -> PeptideMatch per isoform (present / partial / absent)
+               and list_domains (canonical InterPro domains it overlaps)
 io_utils.py    load/save the snapshot and the PeptideInfo / AlphaFold archives
 cli/           generate_data
-app/           Streamlit dashboard; visualizers.py is adapted from the mkt app
+app/           Streamlit dashboard; visualizers.py is adapted from the mkt app;
+               offline.py inlines BokehJS / the committed static/3Dmol.js when CDNs
+               are unreachable
 ```
 
 ### Data flow
 
-1. `generate_data` queries UniProt, UCSC (GENCODE) and AlphaFold DB, then writes
+1. `generate_data` queries UniProt, UCSC (GENCODE), AlphaFold DB and InterPro, then writes
    `data/<gene>.json`, `data/AlphaFold.tar.gz` and `data/PeptideInfo.tar.gz`.
 2. `GeneInfo` ties each isoform to the transcript that translates to it (exact,
    or a downstream in-frame start), else projects it by alignment; exons are
@@ -82,4 +87,5 @@ app/           Streamlit dashboard; visualizers.py is adapted from the mkt app
 3. `PeptideInfo(name=...)` derives `seq_mod`, canonical `int_start`/`int_end`
    (1-based inclusive) and per-isoform matches; objects loaded from the archive
    keep their stored matches.
-4. The app reads only the committed data — no network at runtime.
+4. The app reads only the committed data — no network at runtime. BokehJS and
+   3Dmol.js load from CDNs when reachable, else are embedded (works offline).

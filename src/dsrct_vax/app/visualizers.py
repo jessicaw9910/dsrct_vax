@@ -7,14 +7,16 @@ not pip-installable. Changes from upstream:
 - :func:`render_alignment_plot` takes exon labels as strings (e.g. ``"1b"``), sizes
   its height by track count, can open at a given column, and can be stacked as
   titled panels sharing an x-range (axis/exon labels optional per panel; titles sit
-  below the exon labels in a fixed dark ink); the
-  x-axis formatter is supplied by the caller (canonical positions, not KLIFS).
+  below the exon labels in a fixed dark ink) and can carry labelled bars
+  (:class:`TrackSpan`, e.g. protein domains); the x-axis formatter is supplied by the
+  caller (canonical positions, not KLIFS).
 - ``SequenceAlignmentGenerator`` (KinaseInfo/KLIFS-specific) is not copied.
 - :class:`StructureVisualizerGenerator` is unchanged apart from its docstring; it is
   duck-typed and takes :class:`dsrct_vax.app.structures.PeptideStructure`.
 """
 
 import logging
+from dataclasses import dataclass
 from itertools import chain
 from typing import Any
 
@@ -22,6 +24,7 @@ import numpy as np
 import py3Dmol
 from bokeh.models import (
     ColumnDataSource,
+    CustomJS,
     CustomJSTickFormatter,
     FixedTicker,
     LinearAxis,
@@ -36,6 +39,53 @@ logger = logging.getLogger(__name__)
 
 STR_TITLE_COLOR = "#0b0b0b"
 """str: Panel-title ink, fixed so it stays legible on the white plot under any theme."""
+
+
+@dataclass
+class TrackSpan:
+    """A labelled bar drawn over a range of columns on one track (e.g. a domain)."""
+
+    str_track: str
+    """Track id (one of ``list_ids``) the bar sits on."""
+    int_start: int
+    """First 1-based column covered."""
+    int_end: int
+    """Last 1-based column covered (inclusive)."""
+    str_color: str
+    """Fill color."""
+    str_label: str
+    """Text drawn on the bar."""
+
+
+INT_SPAN_LABEL_EVERY = 70
+"""int: Columns between repeats of a long bar's label, so it stays labelled while
+panned (the initial view shows 80 columns)."""
+
+
+def _return_label_columns(obj_span: TrackSpan) -> list[float]:
+    """Return the column(s) to center a bar's label on: its middle, or repeats.
+
+    Parameters:
+    -----------
+    obj_span : TrackSpan
+        Bar to label.
+
+    Returns:
+    --------
+    list[float]
+        Label centers; one per :data:`INT_SPAN_LABEL_EVERY` columns on a long bar.
+    """
+    int_width = obj_span.int_end - obj_span.int_start + 1
+    if int_width < 2 * INT_SPAN_LABEL_EVERY:
+        return [(obj_span.int_start + obj_span.int_end) / 2]
+    return [
+        float(x)
+        for x in range(
+            obj_span.int_start + INT_SPAN_LABEL_EVERY // 2,
+            obj_span.int_end - INT_SPAN_LABEL_EVERY // 4,
+            INT_SPAN_LABEL_EVERY,
+        )
+    ]
 
 
 def render_alignment_plot(
@@ -54,6 +104,9 @@ def render_alignment_plot(
     int_min_border_left: int = 0,
     x_range: Range1d | None = None,
     int_extra_height: int | None = None,
+    list_spans: list[TrackSpan] | None = None,
+    bool_stretch_width: bool = False,
+    float_px_per_col: float | None = None,
 ) -> figure:
     """Render a Bokeh sequence alignment plot from pre-computed alignment data.
 
@@ -97,6 +150,17 @@ def render_alignment_plot(
         If given, fix the figure's total height to the tracks plus this many pixels
         (title, axes, toolbar) instead of fixing the frame height, so a stack of
         panels has an exact total height, by default None.
+    list_spans : list[TrackSpan] | None
+        Labelled bars drawn over column ranges of a track (e.g. protein domains), each
+        label a single string in regular type, by default None.
+    bool_stretch_width : bool
+        Fill the available width instead of a fixed ``plot_width`` frame (needs
+        ``int_extra_height`` so the height stays fixed), by default False.
+    float_px_per_col : float | None
+        With ``bool_stretch_width``, keep this many pixels per column by resizing the
+        x-range (and its reset) in the browser whenever the frame width changes, so a
+        wider screen shows more residues rather than wider ones; set it on the panel
+        that owns a shared range. By default None.
 
     Returns:
     --------
@@ -152,9 +216,14 @@ def render_alignment_plot(
         if int_extra_height is None
         else {"height": plot_height + int_extra_height}
     )
+    dict_width = (
+        {"sizing_mode": "stretch_width"}
+        if bool_stretch_width
+        else {"frame_width": plot_width}
+    )
     p1 = figure(
         title=None,
-        frame_width=plot_width,
+        **dict_width,
         **dict_height,
         x_range=x_range,
         y_range=list_ids,
@@ -186,6 +255,67 @@ def render_alignment_plot(
     p1.add_glyph(source, glyph)
     p1.add_glyph(source, rects)
     p1.grid.visible = False
+
+    if bool_stretch_width and float_px_per_col:
+        # inner_width is set by the browser once laid out and on every resize
+        p1.js_on_change(
+            "inner_width",
+            CustomJS(
+                args=dict(r=x_range, p=p1, px=float_px_per_col, s0=x_range.start),
+                code="""
+                const n = p.inner_width / px;
+                if (n > 0) {
+                    r.end = r.start + n;
+                    r.reset_start = s0;
+                    r.reset_end = s0 + n;
+                }
+                """,
+            ),
+        )
+
+    # bars (e.g. domains): one rect per span plus a single text label per position, so
+    # labels render as words rather than one character per cell
+    if list_spans:
+        list_spans = [o for o in list_spans if o.str_track in list_ids]
+        source_span = ColumnDataSource(
+            dict(
+                x=[(o.int_start + o.int_end) / 2 for o in list_spans],
+                y=[list_ids.index(o.str_track) + 0.5 for o in list_spans],
+                width=[o.int_end - o.int_start + 1 for o in list_spans],
+                color=[o.str_color for o in list_spans],
+            )
+        )
+        p1.add_glyph(
+            source_span,
+            Rect(
+                x="x",
+                y="y",
+                width="width",
+                height=0.8,
+                fill_color="color",
+                fill_alpha=0.45,
+                line_color="color",
+                line_width=1,
+            ),
+        )
+        list_x, list_y, list_text = [], [], []
+        for o in list_spans:
+            for x in _return_label_columns(o):
+                list_x.append(x)
+                list_y.append(list_ids.index(o.str_track) + 0.5)
+                list_text.append(o.str_label)
+        p1.add_glyph(
+            ColumnDataSource(dict(x=list_x, y=list_y, text=list_text)),
+            Text(
+                x="x",
+                y="y",
+                text="text",
+                text_align="center",
+                text_baseline="middle",
+                text_color=STR_TITLE_COLOR,
+                text_font_size=f"{font_size}pt",
+            ),
+        )
 
     p1.xaxis.ticker = FixedTicker(ticks=list(range(1, N + 1)))
 
@@ -272,6 +402,8 @@ def render_alignment_plot(
 DICT_VIZ_OPACITY = {
     "None": 1.0,
     "Peptides": 1.0,
+    "Exons": 1.0,
+    "Domains": 1.0,
     "lowlight": 0.5,
 }
 """dict[str, float]: Opacity for the py3Dmol viewer."""

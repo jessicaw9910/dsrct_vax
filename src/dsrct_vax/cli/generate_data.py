@@ -44,6 +44,8 @@ def main(gene: str = typer.Option(STR_GENE, help="HGNC symbol of the parent gene
             f"{b}: {m.method} {m.transcript_id}" for b, m in obj_iso.dict_build.items()
         )
         typer.echo(f"  {iso:10s} {len(obj_iso.seq):4d} aa | {str_map}")
+    for dom in obj_gene.list_domains:
+        typer.echo(f"  Domain {dom.accession} {dom.start}-{dom.end} {dom.name}")
     for name, obj in dict_peptide.items():
         list_flag = [
             f"{iso}:{m.status}"

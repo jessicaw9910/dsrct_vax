@@ -40,14 +40,14 @@ app = [
     # pyarrow 25.0.0 segfaults on Streamlit Cloud (see mkt app requirements)
     "pyarrow<25.0.0",
     "streamlit>=1.59.2",
-    "streamlit-bokeh",
 ]
 
 [project.scripts]
 generate_data = "dsrct_vax.cli.generate_data:app"
 
 [tool.setuptools.package-data]
-dsrct_vax = ["data/*.json", "data/*.tar.gz"]
+# 3Dmol.js and its license: the structure viewer's offline fallback
+dsrct_vax = ["data/*.json", "data/*.tar.gz", "app/static/*"]
 
 [project.urls]
 "Homepage" = "https://github.com/jessicaw9910/dsrct_vax"
