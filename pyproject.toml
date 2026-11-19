@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=61.0", "versioningit"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsrct_vax"
+dynamic = ["version"]
+authors = [
+  { name="Jess White", email="jessica.white@choderalab.org" },
+]
+description = "Peptide vaccine design for desmoplastic small round cell tumor (DSRCT)"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+]
+dependencies = [
+    "pydantic>=2",
+    "typer",
+    "mkt-schema @ git+https://github.com/choderalab/missense-kinase-toolkit.git@main#subdirectory=missense_kinase_toolkit/schema",
+    "mkt-databases @ git+https://github.com/choderalab/missense-kinase-toolkit.git@main#subdirectory=missense_kinase_toolkit/databases",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black==26.5.1",
+    "flake8==7.3.0",
+]
+test = [
+    "pytest==8.0.1",
+    "isort==9.0.0a3",
+    "pre-commit",
+]
+notebooks = ["ipykernel"]
+app = [
+    "bokeh",
+    "py3dmol",
+    # pyarrow 25.0.0 segfaults on Streamlit Cloud (see mkt app requirements)
+    "pyarrow<25.0.0",
+    "streamlit>=1.59.2",
+    "streamlit-bokeh",
+]
+
+[project.scripts]
+generate_data = "dsrct_vax.cli.generate_data:app"
+
+[tool.setuptools.package-data]
+dsrct_vax = ["data/*.json", "data/*.tar.gz"]
+
+[project.urls]
+"Homepage" = "https://github.com/jessicaw9910/dsrct_vax"
+"Bug Tracker" = "https://github.com/jessicaw9910/dsrct_vax/issues"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ['E203','E501']
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.versioningit]
+default-version = "1+unknown"
+
+[tool.versioningit.format]
+distance = "{base_version}+{distance}.{vcs}{rev}"
+dirty = "{base_version}+{distance}.{vcs}{rev}.dirty"
+distance-dirty = "{base_version}+{distance}.{vcs}{rev}.dirty"
+
+[tool.versioningit.vcs]
+method = "git"
+match = ["*"]
+default-tag = "0.0.0"

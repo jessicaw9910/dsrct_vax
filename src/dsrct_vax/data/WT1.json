@@ -1,0 +1,1593 @@
+{
+  "gene": "WT1",
+  "uniprot_id": "P19544",
+  "query_date": "2026-11-18",
+  "dict_isoform_seq": {
+    "P19544": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL",
+    "P19544-2": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL",
+    "P19544-3": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL",
+    "P19544-4": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL",
+    "P19544-6": "MEKGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL",
+    "P19544-7": "MDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL",
+    "P19544-8": "MDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL",
+    "P19544-9": "MEKGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+  },
+  "dict_isoform_xref": {
+    "P19544-6": [
+      "ENST00000379079"
+    ],
+    "P19544-7": [
+      "ENST00000452863"
+    ],
+    "P19544-9": [
+      "ENST00000530998"
+    ],
+    "P19544-8": [
+      "ENST00000639563"
+    ],
+    "P19544-2": [
+      "ENST00000850606",
+      "ENST00000850610"
+    ],
+    "P19544-4": [
+      "ENST00000850608"
+    ],
+    "P19544-3": [
+      "ENST00000850609"
+    ]
+  },
+  "dict_transcripts": {
+    "GRCh38": [
+      {
+        "transcript_id": "ENST00000379079.8",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32430529,
+            32430813
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32416489,
+            32416540
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391980,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32430539,
+        "list_tags": [
+          "CCDS",
+          "basic"
+        ],
+        "seq_protein": "MEKGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000527882.7",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32430529,
+            32430813
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32416489,
+            32416540
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32391971,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32430539,
+        "list_tags": [
+          "basic",
+          "exp_conf"
+        ],
+        "seq_protein": "MEKGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000530998.6",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32430529,
+            32430813
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391971,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32430539,
+        "list_tags": [
+          "CCDS",
+          "basic"
+        ],
+        "seq_protein": "MEKGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000640146.3",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32433935,
+            32434168
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391971,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32433972,
+        "list_tags": [
+          "RNA_Seq_supported_only",
+          "basic"
+        ],
+        "seq_protein": "MRDQVLPQAVEGGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000452863.10",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32434699,
+            32435539
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32416489,
+            32416540
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391971,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32435360,
+        "list_tags": [
+          "CCDS",
+          "Ensembl_canonical",
+          "GENCODE_Primary",
+          "MANE_Select",
+          "basic",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000379077.9",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32434699,
+            32435541
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417423,
+            32417654
+          ],
+          [
+            32416489,
+            32416540
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391971,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32417572,
+        "cds_end": 32435360,
+        "list_tags": [
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKG"
+      },
+      {
+        "transcript_id": "ENST00000332351.10",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32434699,
+            32435885
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391980,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32435360,
+        "list_tags": [
+          "CCDS",
+          "basic",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000448076.10",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32434699,
+            32435885
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32416489,
+            32416540
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391980,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32435360,
+        "list_tags": [
+          "CCDS",
+          "basic",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000639563.5",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32434699,
+            32435885
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391971,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32435360,
+        "list_tags": [
+          "GENCODE_Primary",
+          "basic",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000850606.2",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32434699,
+            32435885
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391980,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32435141,
+        "list_tags": [
+          "appris_alternative_1",
+          "basic"
+        ],
+        "seq_protein": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000850608.2",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32434699,
+            32435885
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32416489,
+            32416540
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391980,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32435141,
+        "list_tags": [
+          "basic"
+        ],
+        "seq_protein": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000850609.2",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32434699,
+            32435885
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391971,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32435141,
+        "list_tags": [
+          "appris_principal_3",
+          "basic"
+        ],
+        "seq_protein": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00001143281.1",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32434699,
+            32435885
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32416489,
+            32416540
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32396256,
+            32396407
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391971,
+            32392064
+          ],
+          [
+            32387774,
+            32389179
+          ]
+        ],
+        "cds_start": 32389057,
+        "cds_end": 32435360,
+        "list_tags": [
+          "CCDS",
+          "Ensembl_canonical_extended",
+          "basic",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000651459.3",
+        "build": "GRCh38",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32434699,
+            32435539
+          ],
+          [
+            32428496,
+            32428619
+          ],
+          [
+            32427955,
+            32428058
+          ],
+          [
+            32417576,
+            32417654
+          ],
+          [
+            32416489,
+            32416540
+          ],
+          [
+            32399947,
+            32400044
+          ],
+          [
+            32392665,
+            32392755
+          ],
+          [
+            32391971,
+            32392064
+          ],
+          [
+            32388311,
+            32389179
+          ]
+        ],
+        "cds_start": 32392058,
+        "cds_end": 32435360,
+        "list_tags": [
+          "RNA_Seq_supported_only",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQVRNHTSVTSRTVNEGFLVQTSSKDTKGDIQV"
+      }
+    ],
+    "GRCh37": [
+      {
+        "transcript_id": "ENST00000379079.8",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32452075,
+            32452359
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32438035,
+            32438086
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413526,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32452085,
+        "list_tags": [
+          "CCDS",
+          "basic"
+        ],
+        "seq_protein": "MEKGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000527882.7",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32452075,
+            32452359
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32438035,
+            32438086
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32413517,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32452085,
+        "list_tags": [
+          "basic",
+          "exp_conf"
+        ],
+        "seq_protein": "MEKGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000530998.6",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32452075,
+            32452359
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413517,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32452085,
+        "list_tags": [
+          "CCDS",
+          "basic"
+        ],
+        "seq_protein": "MEKGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000640146.3",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32455481,
+            32455714
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413517,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32455518,
+        "list_tags": [
+          "RNA_Seq_supported_only",
+          "basic"
+        ],
+        "seq_protein": "MRDQVLPQAVEGGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000452863.10",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32456245,
+            32457085
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32438035,
+            32438086
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413517,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32456906,
+        "list_tags": [
+          "CCDS",
+          "Ensembl_canonical",
+          "GENCODE_Primary",
+          "MANE_Select",
+          "basic",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000379077.9",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32456245,
+            32457087
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32438969,
+            32439200
+          ],
+          [
+            32438035,
+            32438086
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413517,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32439118,
+        "cds_end": 32456906,
+        "list_tags": [
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKG"
+      },
+      {
+        "transcript_id": "ENST00000332351.10",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32456245,
+            32457431
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413526,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32456906,
+        "list_tags": [
+          "CCDS",
+          "basic",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000448076.10",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32456245,
+            32457431
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32438035,
+            32438086
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413526,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32456906,
+        "list_tags": [
+          "CCDS",
+          "basic",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000639563.5",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32456245,
+            32457431
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413517,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32456906,
+        "list_tags": [
+          "GENCODE_Primary",
+          "basic",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000850606.2",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32456245,
+            32457431
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413526,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32456687,
+        "list_tags": [
+          "appris_alternative_1",
+          "basic"
+        ],
+        "seq_protein": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000850608.2",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32456245,
+            32457431
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32438035,
+            32438086
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413526,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32456687,
+        "list_tags": [
+          "basic"
+        ],
+        "seq_protein": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000850609.2",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32456245,
+            32457431
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413517,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32456687,
+        "list_tags": [
+          "appris_principal_3",
+          "basic"
+        ],
+        "seq_protein": "MGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00001143281.1",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32456245,
+            32457431
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32438035,
+            32438086
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32417802,
+            32417953
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413517,
+            32413610
+          ],
+          [
+            32409320,
+            32410725
+          ]
+        ],
+        "cds_start": 32410603,
+        "cds_end": 32456906,
+        "list_tags": [
+          "CCDS",
+          "Ensembl_canonical_extended",
+          "basic",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQDVRRVPGVAPTLVRSASETSEKRPFMCAYPGCNKRYFKLSHLQMHSRKHTGEKPYQCDFKDCERRFSRSDQLKRHQRRHTGVKPFQCKTCQRKFSRSDHLKTHTRTHTGKTSEKPFSCRWPSCQKKFARSDELVRHHNMHQRNMTKLQLAL"
+      },
+      {
+        "transcript_id": "ENST00000651459.3",
+        "build": "GRCh37",
+        "chrom": "chr11",
+        "strand": "-",
+        "list_exons": [
+          [
+            32456245,
+            32457085
+          ],
+          [
+            32450042,
+            32450165
+          ],
+          [
+            32449501,
+            32449604
+          ],
+          [
+            32439122,
+            32439200
+          ],
+          [
+            32438035,
+            32438086
+          ],
+          [
+            32421493,
+            32421590
+          ],
+          [
+            32414211,
+            32414301
+          ],
+          [
+            32413517,
+            32413610
+          ],
+          [
+            32409857,
+            32410725
+          ]
+        ],
+        "cds_start": 32413604,
+        "cds_end": 32456906,
+        "list_tags": [
+          "RNA_Seq_supported_only",
+          "non_ATG_start"
+        ],
+        "seq_protein": "LDFLLLQDPASTCVPEPASQHTLRSGPGCLQQPEQQGVRDPGGIWAKLGAAEASAERLQGRRSRGASGSEPQQMGSDVRDLNALLPAVPSLGGGGGCALPVSGAAQWAPVLDFAPPGASAYGSLGGPAPPPAPPPPPPPPPHSFIKQEPSWGGAEPHEEQCLSAFTVHFSGQFTGTAGACRYGPFGPPPPSQASSGQARMFPNAPYLPSCLESQPAIRNQGYSTVTFDGTPSYGHTPSHHAAQFPNHSFKHEDPMGQQGSLGEQQYSVPPPVYGCHTPTDSCTGSQALLLRTPYSSDNLYQMTSQLECMTWNQMNLGATLKGVAAGSSSSVKWTEGQSNHSTGYESDNHTTPILCGAQYRIHTHGVFRGIQVRNHTSVTSRTVNEGFLVQTSSKDTKGDIQV"
+      }
+    ]
+  },
+  "dict_alphafold": {
+    "P19544": {
+      "entry_id": "AF-P19544-F1",
+      "version": 6,
+      "model_created": "2025-08-01T00:00:00Z",
+      "file_name": "AF-P19544-F1.cif",
+      "bool_seq_match": true
+    },
+    "P19544-2": {
+      "entry_id": "AF-P19544-2-F1",
+      "version": 6,
+      "model_created": "2025-08-01T00:00:00Z",
+      "file_name": "AF-P19544-2-F1.cif",
+      "bool_seq_match": true
+    },
+    "P19544-3": {
+      "entry_id": "AF-P19544-3-F1",
+      "version": 6,
+      "model_created": "2025-08-01T00:00:00Z",
+      "file_name": "AF-P19544-3-F1.cif",
+      "bool_seq_match": true
+    },
+    "P19544-4": {
+      "entry_id": "AF-P19544-4-F1",
+      "version": 6,
+      "model_created": "2025-08-01T00:00:00Z",
+      "file_name": "AF-P19544-4-F1.cif",
+      "bool_seq_match": true
+    },
+    "P19544-6": {
+      "entry_id": "AF-P19544-6-F1",
+      "version": 6,
+      "model_created": "2025-08-01T00:00:00Z",
+      "file_name": "AF-P19544-6-F1.cif",
+      "bool_seq_match": true
+    },
+    "P19544-7": {
+      "entry_id": "AF-P19544-7-F1",
+      "version": 6,
+      "model_created": "2025-08-01T00:00:00Z",
+      "file_name": "AF-P19544-7-F1.cif",
+      "bool_seq_match": true
+    },
+    "P19544-8": {
+      "entry_id": "AF-P19544-8-F1",
+      "version": 6,
+      "model_created": "2025-08-01T00:00:00Z",
+      "file_name": "AF-P19544-8-F1.cif",
+      "bool_seq_match": true
+    },
+    "P19544-9": {
+      "entry_id": "AF-P19544-9-F1",
+      "version": 6,
+      "model_created": "2025-08-01T00:00:00Z",
+      "file_name": "AF-P19544-9-F1.cif",
+      "bool_seq_match": true
+    }
+  }
+}

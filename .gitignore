@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# Claude Code working files, but keep version-controlled project skills
+.claude/*
+!.claude/skills/
