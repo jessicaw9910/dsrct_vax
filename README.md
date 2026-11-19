@@ -8,7 +8,8 @@ DSRCT vaccine (`dsrct_vax`)
 `dsrct_vax` supports peptide vaccine design for desmoplastic small round cell tumor
 (DSRCT). It finds the four galinpepimut-S (GPS) WT1 vaccine peptides in every UniProt
 isoform of WT1 and maps each isoform residue to its genomic codon and exon on GRCh38 and
-GRCh37. A Streamlit dashboard shows the results alongside AlphaFold DB structures.
+GRCh37. A Streamlit dashboard shows the results alongside the InterPro domains of the
+canonical protein and AlphaFold DB structures.
 
 Peptide sequences are from
 [Koehne et al., J Clin Oncol 35(15_suppl):8016 (2017)](https://doi.org/10.1200/JCO.2017.35.15_suppl.8016).
@@ -54,16 +55,20 @@ streamlit run src/dsrct_vax/app/app.py
 ```
 
 The app reads only the committed data in `src/dsrct_vax/data/`, so it makes no network
-calls at runtime. It shows:
+calls for data at runtime. Its plotting libraries (BokehJS, 3Dmol.js) load from public
+CDNs when reachable; offline, the app embeds them instead (3Dmol.js from a committed
+copy in `src/dsrct_vax/app/static/`), so it also runs without internet access. It shows:
 
 - **Sequences:** the vaccine peptides above the wild-type isoforms, lined up by
-  genomic codon with exon boundaries. A sidebar checkbox switches between GRCh38 and
-  GRCh37.
+  genomic codon with exon boundaries, and a track of the canonical protein's InterPro
+  domains. A sidebar checkbox switches between GRCh38 and GRCh37.
 - **Peptide coverage by isoform:** where each peptide sits in each isoform. A peptide
   can be present, partial (some residues spliced out) or absent.
-- **Structure:** the AlphaFold DB model of an isoform with the peptides highlighted.
-- **Isoforms and exons:** the transcript matched to each isoform and its coding exon
-  coordinates.
+- **Structure:** the AlphaFold DB model of an isoform, colored by peptide, exon or
+  domain.
+- **Isoforms, exons and domains:** the transcript matched to each isoform, the coding
+  exon coordinates, and each domain's residues, genomic span and member signatures
+  (Pfam, PROSITE, SMART).
 
 To deploy on Streamlit Community Cloud, set the entrypoint to `src/dsrct_vax/app/app.py`.
 Dependencies are installed from the root `requirements.txt`, which installs `.[app]`.
@@ -72,12 +77,12 @@ Dependencies are installed from the root `requirements.txt`, which installs `.[a
 
 | File                 | Contents                                                       |
 | :-                   | :-                                                             |
-| `WT1.json`           | Gene snapshot: UniProt isoforms, GENCODE transcripts on both builds, AlphaFold metadata |
-| `PeptideInfo.tar.gz` | One serialized `PeptideInfo` per peptide with its per-isoform matches |
+| `WT1.json`           | Gene snapshot: UniProt isoforms, GENCODE transcripts on both builds, AlphaFold metadata, canonical InterPro domains |
+| `PeptideInfo.tar.gz` | One serialized `PeptideInfo` per peptide with its per-isoform matches and overlapping domains |
 | `AlphaFold.tar.gz`   | One AlphaFold DB mmCIF per isoform                             |
 
-Regenerate all three by querying UniProt, UCSC (GENCODE `knownGene` on hg38 and hg19) and
-AlphaFold DB:
+Regenerate all three by querying UniProt, UCSC (GENCODE `knownGene` on hg38 and hg19),
+AlphaFold DB and InterPro (entries of type `domain`, every hit):
 
 ```
 generate_data --gene WT1
@@ -99,6 +104,7 @@ obj_pep.seq_mod  # vaccine sequence with heteroclitic substitutions: YMFPNAPYL
 obj_pep.int_start, obj_pep.int_end  # canonical position, 1-based inclusive: 126, 134
 for match in obj_pep.dict_isoforms.values():
     print(match.isoform_id, match.status, match.int_start, match.int_end)
+obj_pep.list_domains  # canonical InterPro domains it overlaps (IPR000976 for WT1-A1)
 ```
 
 A new `PeptideInfo(name=...)` built from `DICT_GPS_PEPTIDES` computes its matches from
@@ -109,4 +115,4 @@ Copyright (c) 2026, Jess White
 
 #### Acknowledgements
 + [missense-kinase-toolkit](https://github.com/choderalab/missense-kinase-toolkit) for the API clients and dashboard components
-+ [UniProt](https://www.uniprot.org/), [GENCODE](https://www.gencodegenes.org/) via the [UCSC Genome Browser API](https://genome.ucsc.edu/goldenPath/help/api.html), and [AlphaFold DB](https://alphafold.ebi.ac.uk/)
++ [UniProt](https://www.uniprot.org/), [GENCODE](https://www.gencodegenes.org/) via the [UCSC Genome Browser API](https://genome.ucsc.edu/goldenPath/help/api.html), [AlphaFold DB](https://alphafold.ebi.ac.uk/), and [InterPro](https://www.ebi.ac.uk/interpro/)
