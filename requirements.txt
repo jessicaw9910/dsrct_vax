@@ -1,0 +1,2 @@
+# Streamlit Community Cloud installs this; entrypoint: src/dsrct_vax/app/app.py
+.[app]
