@@ -72,6 +72,23 @@ class AlphaFoldModel(BaseModel):
     """Whether the model sequence equals the UniProt isoform sequence."""
 
 
+class ProteinDomain(BaseModel):
+    """One hit of an InterPro or Pfam entry on the canonical isoform."""
+
+    accession: str
+    """Entry accession (e.g. ``"IPR013087"`` or ``"PF00096"``)."""
+    name: str
+    """Entry name (e.g. ``"Zinc finger C2H2-type"``)."""
+    type: str
+    """Entry type (e.g. ``"domain"``, ``"family"``)."""
+    start: int
+    """First canonical residue, 1-based inclusive."""
+    end: int
+    """Last canonical residue, 1-based inclusive."""
+    dict_members: dict[str, list[str]] = {}
+    """Member database -> signatures integrated in the entry (e.g. ``"pfam"``)."""
+
+
 class IsoformMapping(BaseModel):
     """An isoform's residues mapped to genomic codons and exons on one build."""
 
@@ -130,6 +147,8 @@ class GeneInfo(BaseModel):
     """Build -> GENCODE protein-coding transcripts of the gene."""
     dict_alphafold: dict[str, AlphaFoldModel] = {}
     """Isoform accession -> AlphaFold DB model."""
+    list_domains: list[ProteinDomain] = []
+    """InterPro domain hits on the canonical isoform, sorted by start."""
     dict_isoforms: dict[str, IsoformInfo] = Field(default_factory=dict, exclude=True)
     """Isoform accession -> derived :class:`IsoformInfo`."""
     dict_exon_label: dict[str, dict[tuple[int, int], str]] = Field(
@@ -469,6 +488,9 @@ class PeptideInfo(BaseModel):
     """int: 1-based inclusive end of ``seq_wt`` in the canonical UniProt sequence."""
     dict_isoforms: dict[str, PeptideMatch] = {}
     """dict[str, PeptideMatch]: isoform accession -> match."""
+    list_domains: list[ProteinDomain] = []
+    """list[ProteinDomain]: canonical InterPro domains overlapping
+    ``int_start``-``int_end``."""
 
     @model_validator(mode="before")
     @classmethod
@@ -483,7 +505,7 @@ class PeptideInfo(BaseModel):
 
     @model_validator(mode="after")
     def populate_derived(self) -> "PeptideInfo":
-        """Derive ``seq_mod``, canonical ``int_start``/``int_end`` and isoform matches.
+        """Derive ``seq_mod``, canonical position, isoform matches and domains.
 
         An object deserialized from ``PeptideInfo.tar.gz`` already carries its isoform
         matches and is returned as stored.
@@ -502,7 +524,30 @@ class PeptideInfo(BaseModel):
         else:
             logger.warning(f"{self.name} is not in canonical {obj_gene.str_canonical}")
         self.dict_isoforms = self.match_isoforms(obj_gene)
+        self.list_domains = self.return_domain_overlap(obj_gene)
         return self
+
+    def return_domain_overlap(self, obj_gene: GeneInfo) -> list[ProteinDomain]:
+        """Return the canonical domains the peptide overlaps.
+
+        Parameters:
+        -----------
+        obj_gene : GeneInfo
+            Gene snapshot with ``list_domains`` in canonical positions.
+
+        Returns:
+        --------
+        list[ProteinDomain]
+            Domains sharing at least one residue with ``int_start``-``int_end``;
+            empty if the peptide is not in the canonical isoform.
+        """
+        if self.int_start is None or self.int_end is None:
+            return []
+        return [
+            dom
+            for dom in obj_gene.list_domains
+            if dom.start <= self.int_end and dom.end >= self.int_start
+        ]
 
     def match_isoforms(self, obj_gene: GeneInfo) -> dict[str, PeptideMatch]:
         """Locate the peptide in every isoform.

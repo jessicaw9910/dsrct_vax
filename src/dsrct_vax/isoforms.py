@@ -7,6 +7,8 @@ Sources:
 - GENCODE transcripts on each build, via :mod:`dsrct_vax.gencode`.
 - AlphaFold DB: one model per isoform (``AF-<isoform>-F1``), via
   :class:`mkt.databases.alphafold.AlphaFoldStructure`.
+- InterPro: entries of type ``"domain"`` on the canonical isoform (every hit), via
+  :class:`dsrct_vax.interpro.InterPro`.
 
 :func:`generate_gene_info` assembles them into a :class:`~dsrct_vax.schema.GeneInfo`.
 """
@@ -19,6 +21,7 @@ from mkt.databases.hgnc import HGNC
 from mkt.databases.uniprot import UniProtJSON
 
 from dsrct_vax.gencode import DICT_BUILD2UCSC, fetch_gencode_transcripts
+from dsrct_vax.interpro import InterPro, return_domains
 from dsrct_vax.schema import AlphaFoldModel, GeneInfo
 from dsrct_vax.uniprot import UniProtIsoformFASTA, return_isoform_xrefs
 
@@ -89,6 +92,7 @@ def generate_gene_info(str_gene: str) -> tuple[GeneInfo, dict[str, str]]:
     dict_xref = return_isoform_xrefs(UniProtJSON(uniprot_id=uniprot_id))
     dict_tx = {b: fetch_gencode_transcripts(str_gene, b) for b in DICT_BUILD2UCSC}
     dict_af, dict_cif = fetch_alphafold_models(dict_seq)
+    list_domains = return_domains(InterPro(uniprot_id=uniprot_id)._pfam, "domain")
     obj_gene = GeneInfo(
         gene=str_gene,
         uniprot_id=uniprot_id,
@@ -97,5 +101,6 @@ def generate_gene_info(str_gene: str) -> tuple[GeneInfo, dict[str, str]]:
         dict_isoform_xref=dict_xref,
         dict_transcripts=dict_tx,
         dict_alphafold=dict_af,
+        list_domains=list_domains,
     )
     return obj_gene, dict_cif
