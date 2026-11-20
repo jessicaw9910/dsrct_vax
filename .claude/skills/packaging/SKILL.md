@@ -23,7 +23,7 @@ baseline.
   `dsrct_vax` under `src/dsrct_vax/`.
 - `mkt-databases`/`mkt-schema` are git dependencies on
   `choderalab/missense-kinase-toolkit` (mirrors `tansey-lab/mkt_impact`).
-- Extras: `dev`, `test`, `notebooks` (ipykernel), `app` (Streamlit dashboard).
+- Extras: `dev`, `test`, `notebooks` (ipykernel, ipython, jupyterlab), `app` (Streamlit dashboard).
 - Console script: `generate_data` (`dsrct_vax.cli.generate_data:app`).
 - Streamlit Community Cloud installs the root `requirements.txt` (`.[app]`);
   entrypoint `src/dsrct_vax/app/app.py`.

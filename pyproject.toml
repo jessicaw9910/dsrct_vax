@@ -33,7 +33,11 @@ test = [
     "isort==9.0.0a3",
     "pre-commit",
 ]
-notebooks = ["ipykernel"]
+notebooks = [
+    "ipykernel",
+    "ipython",
+    "jupyterlab",
+]
 app = [
     "bokeh",
     "py3dmol",
